@@ -1,0 +1,44 @@
+
+.react-calendar {
+    background-color: white;
+    border: none; /* ลบขอบออก */
+    box-shadow: none; /* ลบเงา */
+    border-radius: 10px; /* ลบขอบโค้ง ถ้าไม่ต้องการ */
+    padding: 10px;
+}
+
+.react-calendar__tile {
+    border: none; /* ลบขอบของ tile */
+    background-color: transparent; /* ทำให้พื้นหลังโปร่งใส */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.react-calendar__tile--now {
+    background: #e6f7ff; /* กำหนดสีวันที่ปัจจุบัน */
+    border-radius: 8px;
+}
+
+.react-calendar__tile--active {
+    background-color: #0fbcf9; /* กำหนดสีวันที่ที่ถูกเลือก */
+    color: white;
+}
+
+.react-calendar__tile--active:hover {
+    background-color: #0fa2e8;
+}
+
+.react-calendar__navigation button {
+    border: none; /* ลบขอบของปุ่มการนำทาง */
+    background: transparent; /* ทำให้ปุ่มโปร่งใส */
+}
+
+.react-calendar__month-view__weekdays__weekday {
+    font-weight: bold;
+    color: #c7c7c7;
+}
+
+.react-calendar__month-view__weekdays {
+    border-bottom: none; /* ลบเส้นขอบด้านล่าง */
+    margin-bottom: 10px;
+}

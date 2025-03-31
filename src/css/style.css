@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=fallback');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Additional styles */
+@import 'additional-styles/utility-patterns.css';
+@import 'additional-styles/flatpickr.css';
+
+@import 'tailwindcss/utilities';
+  
+.colored-toast.swal2-icon-success {
+    background-color: #a5dc86 !important;
+}
+
+.colored-toast.swal2-icon-error {
+    background-color: #f27474 !important;
+}
+
+.colored-toast.swal2-icon-warning {
+    background-color: #f8bb86 !important;
+}
+
+.colored-toast.swal2-icon-info {
+    background-color: #3fc3ee !important;
+}
+
+.colored-toast.swal2-icon-question {
+    background-color: #87adbd !important;
+}
+
+.colored-toast .swal2-title {
+    color: white;
+}
+
+.colored-toast .swal2-close {
+    color: white;
+}
+
+.colored-toast .swal2-html-container {
+    color: white;
+}
+
+.wrap {
+    width: 100%;
+    height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.progress {
+    margin: 0;
+    margin-left: 0.5%;
+    height: 30px;
+    width: 25%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    transition: all 0.8s;
+}
+
+.progress:before,
+.progress:after {
+    content: "";
+    position: absolute;
+    transition: all 0.8s;
+    z-index: -1;
+}
+
+.progress:before {
+    height: 50%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transform: skew(45deg);
+}
+
+.progress:after {
+    height: 50%;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transform: skew(-45deg);
+}
+
+.progress:hover:before,
+.progress:hover:after {
+    background: tomato;
+}
+
+.react-modern-calendar-datepicker {
+    position: absolute;
+    bottom: 100%; /* ปฏิทินจะแสดงอยู่เหนือ input */
+    left: 0;
+    z-index: 9999; /* ให้แน่ใจว่าปฏิทินจะอยู่บนสุด */
+    transform: translateY(-10px); /* เพื่อเว้นช่องระหว่างปฏิทินกับ input */
+  }
+  
+  /* ตั้งค่าสีพื้นหลังและขอบของ Calendar */
+.react-calendar {
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.react-calendar__navigation button {
+    color: #0fbcf9;
+    background: transparent;
+    font-weight: bold;
+    border: none;
+}
+
+.react-calendar__month-view__days__day--weekend {
+    color: #ff6b6b;
+    /* กำหนดสีให้วันเสาร์-อาทิตย์ */
+}
+
+.react-calendar__tile {
+    background: none;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.react-calendar__tile--now {
+    background: #e6f7ff;
+    border-radius: 8px;
+}
+
+.react-calendar__tile--active {
+    background-color: #0fbcf9;
+    color: white;
+}
+
+.react-calendar__tile--active:hover {
+    background: #0fa2e8;
+}
+
+.react-calendar__tile:enabled:hover {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.react-calendar__tile--hasActive {
+    background: #f0f0f0;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+    color: #a6a6a6;
+    font-weight: bold;
+}
+
+.react-calendar__month-view__weekdays {
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
